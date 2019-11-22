@@ -1,0 +1,86 @@
+.first-screen {
+    height: 1080px;
+    position: relative;
+
+    .rectangle-with-bg {
+        width: 481px;
+        height: 811px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        background-image: linear-gradient(to top, #b4d3d3, #d9e7e7);
+    }
+
+    .main-content {
+        width: 1800px;
+        height: 810px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+}
+
+.slider-meta {
+    width: 480px;
+    height: 100%;
+    position: relative;
+}
+
+.person-info {
+    color: $primary-color;
+}
+
+.person-name {
+    font-size: 101px;
+    letter-spacing: 2px;
+    max-width: 500px;
+    margin: 0;
+}
+
+.person-job {
+    font-size: 17px;
+    text-transform: uppercase;
+    letter-spacing: 3.4px;
+}
+
+.slide-content {
+    flex-grow: 1;
+    height: 100%;
+    background-color: #e2e8e8;
+    position: relative;
+}
+
+.slide-button {
+    width: 106px;
+    height: 106px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 70px;
+    right: 70px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 34px;
+    color: #777;
+
+    i {
+        position: relative;
+        left: 3px;
+    }
+}
+
+.slide-title {
+    width: 480px;
+    height: 90px;
+    background-color: #ffffff;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    line-height: 90px;
+    text-align: center;
+    color: #87bbbc;
+    font-size: 14px;
+    letter-spacing: 2.8px;
+    text-transform: uppercase;
+}
