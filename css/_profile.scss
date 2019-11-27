@@ -52,30 +52,48 @@
     position: absolute;
     left: 0;
     bottom: 88px;
+    width: 100%;
 }
 
 .slider-pages {
     position: absolute;
-    left: 0;
+    left: 62px;
     bottom: 0;
     font-size: 12px;
     letter-spacing: 2.4px;
     color: $primary-color;
+    padding-left: 0;
+    list-style: none;
+    margin: 0;
 }
 
 .slider-page {
     opacity: 0.7;
-    line-height: 4;
+    margin-top: 41px;
     cursor: pointer;
+    position: relative;
 
-    &.active, &:hover {
+    &.active,
+    &:hover {
         opacity: 1;
+    }
+
+    &.active:before {
+        content: '';
+        position: absolute;
+        width: 28px;
+        height: 2;
+        background-color: $primary-color;
+        display: inline-block;
+        left: -62px;
+        top: 50%;
+        margin-top: -1px;
     }
 }
 
 .slider-arrows {
     position: absolute;
-    left: 50px;
+    left: 50%;
     bottom: 0;
 
 }
@@ -120,4 +138,50 @@
     font-size: 14px;
     letter-spacing: 2.8px;
     text-transform: uppercase;
+}
+
+.second-screen {
+    position: relative;
+    height: 1068;
+    padding: 120px;
+
+    .rectangle-profile {
+        display: flex;
+        width: 649px;
+        height: 948px;
+        background-color: #e2e8e8;
+        left: 0;
+        justify-content: center;
+    }
+
+    .more {
+        width: 1030px;
+    }
+}
+
+.slider-circles {
+    display: flex;
+    align-self: flex-end;
+    margin-bottom: 30px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.slider-circle {
+    width: 6px;
+    height: 6px;
+    opacity: 0.5;
+    border-radius: 3px;
+    background-color: #fff;
+    position: relative;
+    margin-right: 20px;
+
+    &.active {
+        width: 12px;
+        height: 12px;
+        opacity: 1;
+        border-radius: 6px;
+        background-color: #fff;
+        bottom: 3px;
+    }
 }

@@ -476,30 +476,47 @@ header .site-title {
   position: absolute;
   left: 0;
   bottom: 88px;
+  width: 100%;
 }
 
 .slider-pages {
   position: absolute;
-  left: 0;
+  left: 62px;
   bottom: 0;
   font-size: 12px;
   letter-spacing: 2.4px;
   color: #1a1a1d;
+  padding-left: 0;
+  list-style: none;
+  margin: 0;
 }
 
 .slider-page {
   opacity: 0.7;
-  line-height: 4;
+  margin-top: 41px;
   cursor: pointer;
+  position: relative;
 }
 
 .slider-page.active, .slider-page:hover {
   opacity: 1;
 }
 
+.slider-page.active:before {
+  content: '';
+  position: absolute;
+  width: 28px;
+  height: 2;
+  background-color: #1a1a1d;
+  display: inline-block;
+  left: -62px;
+  top: 50%;
+  margin-top: -1px;
+}
+
 .slider-arrows {
   position: absolute;
-  left: 50px;
+  left: 50%;
   bottom: 0;
 }
 
@@ -551,5 +568,63 @@ header .site-title {
   font-size: 14px;
   letter-spacing: 2.8px;
   text-transform: uppercase;
+}
+
+.second-screen {
+  position: relative;
+  height: 1068;
+  padding: 120px;
+}
+
+.second-screen .rectangle-profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 649px;
+  height: 948px;
+  background-color: #e2e8e8;
+  left: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.second-screen .more {
+  width: 1030px;
+}
+
+.slider-circles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-bottom: 30px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.slider-circle {
+  width: 6px;
+  height: 6px;
+  opacity: 0.5;
+  border-radius: 3px;
+  background-color: #fff;
+  position: relative;
+  margin-right: 20px;
+}
+
+.slider-circle.active {
+  width: 12px;
+  height: 12px;
+  opacity: 1;
+  border-radius: 6px;
+  background-color: #fff;
+  bottom: 3px;
 }
 /*# sourceMappingURL=site.css.map */

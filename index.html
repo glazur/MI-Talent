@@ -1,56 +1,79 @@
 <html>
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito:400,600,800|Poppins:400,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/site.css" />
+    <script
+      src="https://kit.fontawesome.com/04000977b7.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<head>
-    <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,800|Poppins:400,500&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="./css/site.css">
-    <script src="https://kit.fontawesome.com/04000977b7.js" crossorigin="anonymous"></script>
-</head>
-
-<body>
+  <body>
     <header class="flex-container">
-        <div class="left-controls">
-            <button class="icon-button"><i class="fas fa-bars"></i></button>
-            <a href="#" class="link-font clients-link">CLIENTS</a>
-            <a href="#" class="link-font">NEWS</a>
-        </div>
-        <div class="search-controls">
-            <button class="icon-button"><i class="fas fa-search"></i></button>
-        </div>
-        <div class="site-title nunito-extrabold">MITALENT</div>
+      <div class="left-controls">
+        <button class="icon-button"><i class="fas fa-bars"></i></button>
+        <a href="#" class="link-font clients-link">CLIENTS</a>
+        <a href="#" class="link-font">NEWS</a>
+      </div>
+      <div class="search-controls">
+        <button class="icon-button"><i class="fas fa-search"></i></button>
+      </div>
+      <div class="site-title nunito-extrabold">MITALENT</div>
     </header>
     <section class="first-screen">
-        <div class="rectangle-with-bg"></div>
-        <div class="main-content flex-container">
-            <div class="slider-meta">
-                <div class="person-info">
-                    <h1 class="person-name poppins-regular">Derek Anderson</h1>
-                    <div class="person-job nunito-semibold">British Comedian</div>
-                </div>
-                <div class="slider-controls">
-                    <ul class="slider-pages nunito-extrabold">
-                        <li class="slider-page">01</li>
-                        <li class="slider-page">02</li>
-                        <li class="slider-page nunito-extrabold">03</li>
-                        <li class="slider-page nunito-extrabold">04</li>
-                    </ul>
-                    <div class="slider-arrows">
-                        <i class="fas fa-arrow-left"></i>
-                        <i class="fas fa-arrow-right"></i>
-                    </div>
-                </div>
+      <div class="rectangle-with-bg"></div>
+      <div class="main-content flex-container">
+        <div class="slider-meta">
+          <div class="person-info">
+            <h1 class="person-name poppins-regular">Derek Anderson</h1>
+            <div class="person-job nunito-semibold">British Comedian</div>
+          </div>
+          <div class="slider-controls">
+            <ul class="slider-pages nunito-extrabold">
+              <li class="slider-page">01</li>
+              <li class="slider-page active">02</li>
+              <li class="slider-page">03</li>
+              <li class="slider-page">04</li>
+            </ul>
+            <div class="slider-arrows">
+              <i class="fas fa-arrow-left"></i>
+              <i class="fas fa-arrow-right disabled"></i>
             </div>
-            <div class="slide-content">
-                <div class="slide-video"></div>
-                <div class="slide-button">
-                    <i class="fas fa-play"></i>
-                </div>
-                <div class="slide-title nunito-extrabold">
-                    Enquire about derek
-                </div>
-            </div>
+          </div>
         </div>
+        <div class="slide-content">
+          <div class="slide-video"></div>
+          <div class="slide-button">
+            <i class="fas fa-play"></i>
+          </div>
+          <div class="slide-title nunito-extrabold">
+            Enquire about derek
+          </div>
+        </div>
+      </div>
     </section>
-</body>
 
+    <section class="second-screen">
+      <div class="rectangle-profile">
+        <div class="slider-circles">
+          <div class="slider-circle"></div>
+          <div class="slider-circle active"></div>
+          <div class="slider-circle"></div>
+          <div class="slider-circle"></div>
+        </div>
+      </div>
+      <div class="more">
+        <div class="info-tasks">
+          <a href="#" class="link-font clients-link">PROFILE</a>
+          <a href="#" class="link-font">PRESS</a>
+          <a href="#" class="link-font clients-link">AWARDS</a>
+          <a href="#" class="link-font">CREADITS</a>
+        </div>
+        <div class="profile-info"></div>
+      </div>
+    </section>
+  </body>
 </html>
