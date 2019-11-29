@@ -341,7 +341,7 @@ template {
   display: none;
 }
 
-.nunito-regular, .nunito-semibold, .nunito-extrabold, .link-font {
+.nunito-regular, .nunito-semibold, .nunito-extrabold, .link-font, .link-info {
   font-family: 'Nunito', sans-serif;
 }
 
@@ -349,7 +349,7 @@ template {
   font-weight: 600;
 }
 
-.nunito-extrabold, .link-font {
+.nunito-extrabold, .link-font, .link-info {
   font-weight: 800;
 }
 
@@ -375,6 +375,7 @@ template {
   font-size: 14px;
   color: #1a1a1d;
   text-decoration: unset;
+  letter-spacing: 2.8px;
 }
 
 .link-font:hover {
@@ -571,7 +572,10 @@ header .site-title {
 }
 
 .second-screen {
-  position: relative;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   height: 1068;
   padding: 120px;
 }
@@ -590,6 +594,13 @@ header .site-title {
 }
 
 .second-screen .more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   width: 1030px;
 }
 
@@ -626,5 +637,28 @@ header .site-title {
   border-radius: 6px;
   background-color: #fff;
   bottom: 3px;
+}
+
+.info-tasks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 192px;
+  width: 437px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.link-info {
+  font-size: 12px;
+  letter-spacing: 2.4px;
+  color: #696970;
+  line-height: 48px;
+  text-decoration: unset;
+}
+
+.link-info:hover {
+  color: #1a1a1d;
 }
 /*# sourceMappingURL=site.css.map */

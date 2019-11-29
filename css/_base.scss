@@ -8,6 +8,7 @@
     font-size: 14px;
     color: $primary-color;
     text-decoration: unset;
+    letter-spacing: 2.8px;
 
     &:hover {
         color: rgba(26, 26, 29, 0.5);
@@ -49,4 +50,6 @@ header {
 .search-controls {
     margin-right: 66px;
 }
+
+
 

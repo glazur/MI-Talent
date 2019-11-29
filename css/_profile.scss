@@ -141,7 +141,8 @@
 }
 
 .second-screen {
-    position: relative;
+    position: absolute;
+    display: flex;
     height: 1068;
     padding: 120px;
 
@@ -155,6 +156,8 @@
     }
 
     .more {
+        display: flex;
+        flex-direction: row;
         width: 1030px;
     }
 }
@@ -183,5 +186,25 @@
         border-radius: 6px;
         background-color: #fff;
         bottom: 3px;
+    }
+}
+
+.info-tasks {
+    display: flex;
+    margin-left: 192px;
+    width: 437px;
+    justify-content: space-between;
+}
+
+.link-info {
+    @extend .nunito-extrabold;
+    font-size: 12px;
+    letter-spacing: 2.4px;
+    color: #696970;
+    line-height: 48px;
+    text-decoration: unset;
+
+    &:hover {
+        color: $primary-color;
     }
 }
