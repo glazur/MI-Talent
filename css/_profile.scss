@@ -194,6 +194,8 @@
     display: flex;
     width: 437px;
     justify-content: space-between;
+    text-align: center;
+    margin-left: -22px;
 }
 
 .link-info {
@@ -201,7 +203,8 @@
     font-size: 12px;
     letter-spacing: 2.4px;
     color: #696970;
-    line-height: 48px;
+    padding-bottom: 16px;
+    width: 120px;
     text-decoration: unset;
 
     &:hover {
@@ -260,4 +263,14 @@
     width: 477px;
     height: 345px;
     margin-top: 61px;
+}
+
+.social-networks-icons {
+    display: flex;
+    flex-direction: column;
+    width: 16px;
+    height: 16px;
+    vertical-align: center;
+    height: 148px;
+    justify-content: space-between;
 }
