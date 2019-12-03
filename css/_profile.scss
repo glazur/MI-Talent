@@ -270,7 +270,22 @@
     flex-direction: column;
     width: 16px;
     height: 16px;
-    vertical-align: center;
     height: 148px;
     justify-content: space-between;
+    align-self: center;
+    position: absolute;
+    right: 0;
+    margin-right: 112px;
+}
+
+.for-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.third-screen {
+    position: absolute;
+    display: flex;
+    height: 1068;
+    padding: 120px;
 }

@@ -734,10 +734,33 @@ header .site-title {
           flex-direction: column;
   width: 16px;
   height: 16px;
-  vertical-align: center;
   height: 148px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-item-align: center;
+      align-self: center;
+  position: absolute;
+  right: 0;
+  margin-right: 112px;
+}
+
+.for-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.third-screen {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 1068;
+  padding: 120px;
 }
 /*# sourceMappingURL=site.css.map */
