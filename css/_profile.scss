@@ -141,7 +141,7 @@
 }
 
 .second-screen {
-    position: absolute;
+    position: relative;
     display: flex;
     height: 1068;
     padding: 120px;
@@ -284,8 +284,25 @@
 }
 
 .third-screen {
-    position: absolute;
+    height: 1080px;
     display: flex;
-    height: 1068;
-    padding: 120px;
+}
+
+.press-block {
+    width: 1100px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.press-header {
+    @extend .poppins-regular;
+    color: $primary-color;
+    font-size: 60px;
+    line-height: 1.32;
+    letter-spacing: normal;
+    text-align: left;
+    width: 466px;
+    height: 125px;
+    
 }
