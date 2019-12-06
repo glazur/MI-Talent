@@ -341,7 +341,7 @@ template {
   display: none;
 }
 
-.nunito-regular, .nunito-semibold, .award-info, .nunito-extrabold, .link-font, .link-info, .main-info, .article-date {
+.nunito-regular, .nunito-semibold, .award-info, .nunito-extrabold, .link-font, .link-info, .explore-more, .main-info, .article-date {
   font-family: 'Nunito', sans-serif;
 }
 
@@ -349,7 +349,7 @@ template {
   font-weight: 600;
 }
 
-.nunito-extrabold, .link-font, .link-info {
+.nunito-extrabold, .link-font, .link-info, .explore-more {
   font-weight: 800;
 }
 
@@ -824,12 +824,20 @@ header .site-title {
   margin-left: 42px;
   width: 325px;
   height: 92px;
-  line-height: 1.5;
   font-size: 24px;
 }
 
 .article-name {
   color: #1a1a1d;
+  word-spacing: normal;
+}
+
+.article-name::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: calc((1 - 1.5) * 0.3em);
 }
 
 .video-preview {
@@ -837,10 +845,16 @@ header .site-title {
   height: 139px;
   background-color: #b4d3d3;
   font-size: 34px;
+  position: relative;
 }
 
 .video-preview i {
-  position: relative;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #fff;
 }
 
 .full-row-video {
@@ -858,16 +872,47 @@ header .site-title {
   color: #87bbbc;
   width: 289px;
   height: 91px;
-  line-height: 1.5;
   font-size: 24px;
+}
+
+.video-name::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: calc((1 - 1.5) * 0.3em);
 }
 
 .article-date {
   width: 104px;
   height: 14px;
   font-size: 15px;
-  line-height: 2.5;
   color: #77777e;
   margin-top: 36px;
+  line-height: 2.5;
+}
+
+.explore-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 63px;
+}
+
+.explore-more {
+  font-size: 14px;
+  line-height: 2.14;
+  letter-spacing: 2.8px;
+  idth: 138px;
+  height: 11px;
+}
+
+.explore-arrow {
+  bottom: 0;
+  margin-left: 22px;
 }
 /*# sourceMappingURL=site.css.map */
