@@ -143,8 +143,8 @@
 .second-screen {
     position: relative;
     display: flex;
-    height: 1068;
-    width: 1920;
+    height: 948px;
+    width: 1680px;
     padding: 120px;
 
     .rectangle-profile {
@@ -159,7 +159,7 @@
     .more {
         display: flex;
         flex-direction: column;
-        width: 1030px;
+        width: 849px;
         margin-left: 192px;
     }
 }
@@ -269,19 +269,18 @@
 .social-networks-icons {
     display: flex;
     flex-direction: column;
+    margin-top: 267px;
     width: 16px;
     height: 16px;
     height: 148px;
     justify-content: space-between;
-    align-self: center;
-    position: absolute;
     right: 0;
-    margin-right: 112px;
 }
 
 .for-row {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 .third-screen {
@@ -295,6 +294,9 @@
     background-color: #fff;
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    padding-left: 240px;
+    align-self: center;
 }
 
 .press-header {
@@ -306,7 +308,13 @@
     text-align: left;
     width: 466px;
     height: 125px;
+}
 
+.divider {
+    width: 140px;
+    height: 2px;
+    background-color: $primary-color;
+    margin-top: 54px;
 }
 
 .full-row {
@@ -402,13 +410,21 @@
 .explore-more {
     @extend .nunito-extrabold;
     font-size: 14px;
-    line-height: 2.14;
     letter-spacing: 2.8px;
-    idth: 138px;
     height: 11px;
+    line-height: 2.14;
 }
 
 .explore-arrow {
-    bottom: 0;
     margin-left: 22px;
+    width: 18px;
+    height: 14px;
+    margin-top: 5px;
+}
+
+.photo-block {
+    width: 839px;
+    height: 1080px;
+    margin-left: -380px;
+    background-color: #e2e8e8;
 }

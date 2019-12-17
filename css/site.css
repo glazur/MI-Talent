@@ -576,8 +576,8 @@ header .site-title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 1068;
-  width: 1920;
+  height: 948px;
+  width: 1680px;
   padding: 120px;
 }
 
@@ -602,7 +602,7 @@ header .site-title {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 1030px;
+  width: 849px;
   margin-left: 192px;
 }
 
@@ -733,17 +733,14 @@ header .site-title {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-top: 267px;
   width: 16px;
   height: 16px;
   height: 148px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -ms-flex-item-align: center;
-      align-self: center;
-  position: absolute;
   right: 0;
-  margin-right: 112px;
 }
 
 .for-row {
@@ -754,6 +751,9 @@ header .site-title {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .third-screen {
@@ -774,6 +774,12 @@ header .site-title {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-left: 240px;
+  -ms-flex-item-align: center;
+      align-self: center;
 }
 
 .press-header {
@@ -784,6 +790,13 @@ header .site-title {
   text-align: left;
   width: 466px;
   height: 125px;
+}
+
+.divider {
+  width: 140px;
+  height: 2px;
+  background-color: #1a1a1d;
+  margin-top: 54px;
 }
 
 .full-row {
@@ -905,14 +918,22 @@ header .site-title {
 
 .explore-more {
   font-size: 14px;
-  line-height: 2.14;
   letter-spacing: 2.8px;
-  idth: 138px;
   height: 11px;
+  line-height: 2.14;
 }
 
 .explore-arrow {
-  bottom: 0;
   margin-left: 22px;
+  width: 18px;
+  height: 14px;
+  margin-top: 5px;
+}
+
+.photo-block {
+  width: 839px;
+  height: 1080px;
+  margin-left: -380px;
+  background-color: #e2e8e8;
 }
 /*# sourceMappingURL=site.css.map */
